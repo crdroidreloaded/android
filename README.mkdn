@@ -1,56 +1,40 @@
-# crDroid Android #
+<div align="center">
+<h1>crDroid Reloaded</h1>
+</br>
+<strong><i> Legacy crDroid, reloaded with newer patches! </i></strong>
+</br>
+<i> As in its name, crDroid Reloaded is an upstreamed version of crDroid Nougat, one of the most customizable Lineage-based Nougat ROMs! </i>
+</br>
 
-## Grabbing the source ##
+Getting started
+---------------
+To get started with Android/crDroid, you'll need to get
+familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
+  
+Credits
+-------
+- [**LineageOS**](https://github.com/LineageOS)
+- [**crDroid**](https://github.com/dotOS)
+*********
+<a href="https://twitter.com/WindowZ414">
+<img src="https://img.shields.io/badge/Developer-Twitter-blue?style=for-the-badge">
+</a>
 
-[Repo](http://source.android.com/source/developing.html) is a tool provided by Google that
-simplifies using [Git](http://git-scm.com/book) in the context of the Android source.
-
-### Installing Repo ###
-
-```bash
-# Make a directory where Repo will be stored and add it to the path
-$ mkdir ~/bin
-$ PATH=~/bin:$PATH
-
-# Download Repo itself
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-
-# Make Repo executable
-$ chmod a+x ~/bin/repo
+To initialize your local repository using your trees, use a command like this:  
+```
+repo init --depth=1 -u git://github.com/crdroidreloaded/android.git -b 7.1
+```
+Then to sync up:
+```
+repo sync
+```
+And to start build:
+```
+. build/envsetup.sh
+lunch lineage_<devicecodename>-userdebug
+mka bacon
 ```
 
-### Initializing Repo ###
+Brought back to life by Beru Shinsetsu with <3.
 
-```bash
-# Create a directory for the source files
-# This can be located anywhere (as long as the fs is case-sensitive)
-$ mkdir WORKSPACE
-$ cd WORKSPACE
-
-# Install Repo in the created directory
-$ repo init -u https://github.com/crdroidandroid/android -b 7.1
-```
-
-This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
-first run, it is expected to take a while as it will download all the required Android source files
-and their change histories.
-
-```bash
-# Let Repo take care of all the hard work
-$ repo sync
-```
-
-## Building ##
-
-```bash
-# Go to the root of the source tree...
-$ cd WORKSPACE
-# ...and run to prepare our devices list.
-$ . build/envsetup.sh
-# ...choose your device by picking a combo
-$ lunch
-# ... now run after the combo picked
-$ brunch "your device name"
-```
-
-For more updates on crDroid Android, be part of our [Google+ community.](https://plus.google.com/communities/118297646046960923906)
+*This project is part of [Reloaded ROMs project](https://t.me/Reloaded_ROMs).*
