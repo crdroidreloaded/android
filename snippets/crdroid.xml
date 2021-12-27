@@ -21,9 +21,6 @@
   <project path="external/libxml2" name="android_external_libxml2" remote="cr-reload" />
   <project path="external/mdnsresponder" name="crdroidandroid/android_external_mdnsresponder" remote="crdroid" />
   <project path="external/skia" name="android_external_skia" remote="cr-reload" />
-  <project path="external/sqlite" name="android_external_sqlite" remote="cr-reload" />
-  <project path="external/v8" name="android_external_v8" remote="cr-reload" />
-  <project path="external/zlib" name="android_external_zlib" remote="cr-reload" />
   <project path="frameworks/base" name="android_frameworks_base" remote="cr-reload" />
   <project path="frameworks/native" name="android_frameworks_native" remote="cr-reload" />
   <project path="frameworks/support" name="crdroidandroid/android_frameworks_support" remote="crdroid" />
