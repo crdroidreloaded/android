@@ -14,7 +14,7 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 Credits
 -------
 - [**LineageOS**](https://github.com/LineageOS)
-- [**crDroid**](https://github.com/dotOS)
+- [**crDroid**](https://github.com/crdroidandroid)
 *********
 <a href="https://twitter.com/WindowZ414">
 <img src="https://img.shields.io/badge/Developer-Twitter-blue?style=for-the-badge">
